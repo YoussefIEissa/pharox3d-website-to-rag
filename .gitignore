@@ -1,0 +1,106 @@
+# ============================================================
+# Python
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+build/
+dist/
+wheels/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# ============================================================
+# Virtual environments / uv
+# ============================================================
+.venv/
+venv/
+env/
+.uv-cache/
+
+# ============================================================
+# Secrets & local configuration
+# ============================================================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials*.json
+service-account*.json
+
+# ============================================================
+# Generated pipeline artifacts (reproducible from source)
+# ============================================================
+# Raw Crawl4AI Markdown (crawler_fast.py)
+/output/
+# Cleaned Markdown + metadata.json (cleaner.py)
+/cleaned/
+# chunks.json + embedded_chunks.json (chunker.py, embedder.py)
+/chunks/
+# Local scratch data directories
+/data/
+
+# ============================================================
+# Vector database (local Qdrant storage)
+# ============================================================
+/qdrant_db/
+qdrant_storage/
+*.sqlite
+*.sqlite3
+*.db
+
+# ============================================================
+# Model caches / large binary artifacts
+# ============================================================
+.cache/
+models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.onnx
+*.gguf
+*.npy
+*.npz
+*.parquet
+
+# ============================================================
+# Crawl4AI / Playwright
+# ============================================================
+.crawl4ai/
+playwright-report/
+test-results/
+
+# ============================================================
+# Testing / tooling
+# ============================================================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.ipynb_checkpoints/
+
+# ============================================================
+# Logs
+# ============================================================
+*.log
+logs/
+
+# ============================================================
+# Editors / OS
+# ============================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+Zone.Identifier
+*:Zone.Identifier

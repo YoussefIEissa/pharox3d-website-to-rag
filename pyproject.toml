@@ -1,0 +1,22 @@
+[project]
+name = "crawl4ai-test"
+version = "0.1.0"
+description = "Crawl the Pharox3D website into a Qdrant vector knowledge base and answer questions with a local Gemma 4 RAG pipeline."
+readme = "README.md"
+authors = [
+    { name = "Youssef Ibrahim", email = "youssefiibrahim2@gmail.com" }
+]
+requires-python = ">=3.13.15"
+dependencies = [
+    "crawl4ai>=0.9.4",
+    "qdrant-client>=1.19.1",
+    "requests>=2.34.2",
+    "sentence-transformers>=6.1.0",
+]
+
+[project.scripts]
+crawl4ai-test = "crawl4ai_test:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
